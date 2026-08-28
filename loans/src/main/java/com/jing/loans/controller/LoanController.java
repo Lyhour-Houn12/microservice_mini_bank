@@ -158,5 +158,10 @@ public class LoanController {
         }
     }
 
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello World!";
+    }
+
 
 }
