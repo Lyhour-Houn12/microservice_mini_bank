@@ -1,6 +1,7 @@
 package com.jing.cards.controller;
 
 import com.jing.cards.constant.CardConstant;
+import com.jing.cards.dto.CardDetailsInfoDto;
 import com.jing.cards.dto.CardDto;
 import com.jing.cards.dto.ErrorResponseDto;
 import com.jing.cards.dto.ResponseDto;
@@ -14,6 +15,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -30,6 +33,12 @@ import org.springframework.web.bind.annotation.*;
 public class CardController {
 
     private final CardService cardService;
+
+    @Value("${build.version}")
+    private String buildVersion;
+
+    @Autowired
+    private CardDetailsInfoDto cardDetailsInfoDto;
     @Operation(
             summary = "Create Card REST API",
             description = "REST API to create new Card inside EazyBank"
@@ -153,5 +162,15 @@ public class CardController {
                     .status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(CardConstant.STATUS_417, CardConstant.MESSAGE_417_DELETE));
         }
+    }
+
+    @GetMapping("/build-info")
+    public ResponseEntity<?> getBuildVersion() {
+        return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
+    }
+
+    @GetMapping("/contact-info")
+    public ResponseEntity<CardDetailsInfoDto> getCardDetailsInfo(){
+        return ResponseEntity.status(HttpStatus.OK).body(cardDetailsInfoDto);
     }
 }

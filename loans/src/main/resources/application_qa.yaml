@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "loan_qa"
+
+build:
+  version: "4"
+
+loans:
+  message: "Welcome to EAZYBANK loans related to QA APIs"
+  contactDetails:
+    name: "JING - QA Testing"
+    email: "jing@gmail.com"
+  onCallSupport:
+    - (222) 321-1234
+    - (222) 325-1254

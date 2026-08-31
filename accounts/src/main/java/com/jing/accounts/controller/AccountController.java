@@ -1,6 +1,7 @@
 package com.jing.accounts.controller;
 
 import com.jing.accounts.constant.AccountConstants;
+import com.jing.accounts.payload.dto.AccountContactInfoDto;
 import com.jing.accounts.payload.dto.CustomerDto;
 import com.jing.accounts.payload.response.ErrorResponseDto;
 import com.jing.accounts.payload.response.ResponseDto;
@@ -14,6 +15,9 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -28,6 +32,15 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class AccountController {
     private final AccountService accountService;
+
+    @Value("${build.version}")
+    private String buildVersion;
+
+    @Autowired
+    private Environment environment;
+
+    @Autowired
+    private AccountContactInfoDto accountContactInfoDto;
 
     @Operation(
             summary = "Create Account For REST API",
@@ -111,4 +124,34 @@ public class AccountController {
             return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).body(new ResponseDto(AccountConstants.STATUS_417, AccountConstants.MESSAGE_417_DELETE));
         }
     }
+
+
+    @Operation(
+            summary = "Builder Version Info For REST API",
+            description = "REST API to describe builder version"
+    )
+    @GetMapping("/build-info")
+    public ResponseEntity<?> getBuildInfo(){
+        return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
+    }
+
+    @Operation(
+            summary = "Get Java Version",
+            description = "REST API to describe java version"
+    )
+    @GetMapping("/java-version")
+    public ResponseEntity<?> getJavaVersion(){
+        return ResponseEntity.status(HttpStatus.OK).body(environment.getProperty("JAVA_HOME"));
+    }
+
+
+    @Operation(
+            summary = "Get Contact Information",
+            description = "REST API to describe about contact information of accounts"
+    )
+    @GetMapping("/contact-info")
+    public ResponseEntity<?> getContactInfo(){
+        return ResponseEntity.status(HttpStatus.OK).body(accountContactInfoDto);
+    }
+
 }

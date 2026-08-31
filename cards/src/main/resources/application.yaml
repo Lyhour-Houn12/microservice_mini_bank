@@ -14,3 +14,23 @@ spring:
       hibernate:
         ddl-auto: update
       show-sql: true
+    config:
+      import:
+        - "application_qa.yaml"
+        - "application_prod.yaml"
+    profiles:
+      active: "card_qa"
+
+
+
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to EAZYBANK cards related to local APIs"
+  contactDetails:
+    name: "Houn Lyhour - Software Engineering"
+    email: "lhour@gmail.com"
+  onSupportCall:
+    - (111) 321-1234
+    - (111) 325-1254
