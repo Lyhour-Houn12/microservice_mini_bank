@@ -1,10 +1,5 @@
-spring:
-  config:
-    activate:
-      on-profile: "card_qa"
-
 build:
-  version: "2"
+  version: "1.1"
 
 cards:
   message: "Welcome to EAZYBANK cards related to QA APIs"
@@ -12,5 +7,5 @@ cards:
     name: "JING - QA Testing"
     email: "jing@gmail.com"
   onSupportCall:
-    - (222) 321-1234
-    - (222) 325-1254
+    - (333) 321-1234
+    - (333) 325-1254

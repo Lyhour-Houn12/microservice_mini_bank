@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to EAZYBANK cards related to local APIs"
+  contactDetails:
+    name: "Houn Lyhour - Software Engineering"
+    email: "lhour@gmail.com"
+  onSupportCall:
+    - (111) 321-1234
+    - (111) 325-1254

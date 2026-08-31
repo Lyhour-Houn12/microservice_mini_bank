@@ -1,0 +1,11 @@
+build:
+  version: "3.2"
+
+loans:
+  message: "Welcome to EAZYBANK loans related to local APIs"
+  contactDetails:
+    name: "JING - Full Stack Developer"
+    email: "jing@gmail.com"
+  onCallSupport:
+    - (333) 321-1234
+    - (333) 325-1254
