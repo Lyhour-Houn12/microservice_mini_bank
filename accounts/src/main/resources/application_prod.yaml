@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to EazyBank accounts related PROD APIs"
+  contactDetails:
+    name: "niza Doe - Developer"
+    email: "youn@gmail.com"
+  onCallSupport:
+    -(777) 777-2264
+    -(777) 777-2855

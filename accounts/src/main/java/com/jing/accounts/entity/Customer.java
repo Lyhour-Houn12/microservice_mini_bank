@@ -37,4 +37,6 @@ public class Customer extends BaseEntity {
     @Pattern(regexp = "^$|^[0-9]{9}$", message = "Mobile phone must be 9 digits")
     @Column(name = "mobile_phone", unique = true)
     private String mobilePhone;
+
+
 }

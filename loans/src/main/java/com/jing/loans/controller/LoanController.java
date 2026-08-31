@@ -3,6 +3,7 @@ package com.jing.loans.controller;
 import com.jing.loans.constant.LoanConstants;
 import com.jing.loans.dto.ErrorResponseDto;
 import com.jing.loans.dto.LoanDto;
+import com.jing.loans.dto.LoansContactInfoDto;
 import com.jing.loans.dto.ResponseDto;
 import com.jing.loans.service.LoanService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -14,6 +15,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -29,6 +31,11 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 public class LoanController {
     private final LoanService loanService;
+
+    @Value("${build.version}")
+    private String buildVersion;
+
+    private final LoansContactInfoDto loansContactInfoDto;
 
     @Operation(
             summary = "Create Loan REST API",
@@ -163,5 +170,15 @@ public class LoanController {
         return "Hello World!";
     }
 
+    @GetMapping("/build-info")
+    public ResponseEntity<?> getBuildInfo(){
+        return ResponseEntity.status(HttpStatus.OK).body(buildVersion);
+    }
 
+
+    @GetMapping("/contact-info")
+    public ResponseEntity<?> getContactInfo() {
+        return ResponseEntity.status(HttpStatus.OK).body(loansContactInfoDto);
+
+    }
 }
