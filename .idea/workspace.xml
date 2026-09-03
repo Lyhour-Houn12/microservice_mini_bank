@@ -5,25 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aab53b8-098a-4766-a52f-eea0e298ffd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/microservice_mini_bank.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/java/com/jing/configserver/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/payload/dto/AccountContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/payload/dto/AccountContactInfoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application_prod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-prod.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application_qa.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-qa.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/jing/cards/dto/CardDetailsInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/jing/cards/dto/CardDetailsInfoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application_prod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-qa.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application_qa.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-prod.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/jing/loans/dto/LoansContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/jing/loans/dto/LoansContactInfoDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application_prod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-qa.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application_qa.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-prod.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +71,65 @@
     <commands />
     <urls />
   </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.6421150696852777E-34" />
+      <entry key="MS500" value="1.750171942751531E-7" />
+      <entry key="S2" value="0.020455006133191428" />
+      <entry key="S5" value="0.21694529555548944" />
+      <entry key="S10" value="0.5647534246085552" />
+      <entry key="S30" value="1.5155702695521496" />
+      <entry key="S60" value="2.099149252139415" />
+      <entry key="M2" value="2.6767567313575107" />
+      <entry key="M5" value="6.371153420999967" />
+      <entry key="M10" value="17.57425986433224" />
+      <entry key="M15" value="31.791555377377094" />
+      <entry key="M30" value="83.06544610559071" />
+      <entry key="H1" value="184.78431223437008" />
+      <entry key="H2" value="325.32734855374775" />
+      <entry key="H4" value="456.9763391343566" />
+      <entry key="D1" value="626.0113744321554" />
+      <entry key="W1" value="662.6359916636047" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.000001405972688" />
+      <entry key="MS500" value="1.0675453376274595" />
+      <entry key="S2" value="1.5097994996030135" />
+      <entry key="S5" value="1.7682770352429829" />
+      <entry key="S10" value="1.9664857092080998" />
+      <entry key="S30" value="2.6701318181612725" />
+      <entry key="S60" value="3.1915036950491675" />
+      <entry key="M2" value="3.7002240562021393" />
+      <entry key="M5" value="4.854430034206354" />
+      <entry key="M10" value="7.730024932387955" />
+      <entry key="M15" value="11.557320265682225" />
+      <entry key="M30" value="23.66007813910608" />
+      <entry key="H1" value="42.2467708408781" />
+      <entry key="H2" value="62.14063711913947" />
+      <entry key="H4" value="77.84447154719135" />
+      <entry key="D1" value="95.73401980373677" />
+      <entry key="W1" value="99.37448858323128" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.5385470566217923E-6" />
+      <entry key="MS500" value="0.06879335909984435" />
+      <entry key="S2" value="0.5979320285747152" />
+      <entry key="S5" value="1.3170199472199213" />
+      <entry key="S10" value="2.078230631921617" />
+      <entry key="S30" value="3.942017643492548" />
+      <entry key="S60" value="5.139643927432192" />
+      <entry key="M2" value="6.290463780713411" />
+      <entry key="M5" value="11.184163067889534" />
+      <entry key="M10" value="25.27530230814835" />
+      <entry key="M15" value="43.32196006643099" />
+      <entry key="M30" value="106.6992881044536" />
+      <entry key="H1" value="227.00751145448504" />
+      <entry key="H2" value="387.45057444319093" />
+      <entry key="H4" value="534.8099240548752" />
+      <entry key="D1" value="721.7431743628654" />
+      <entry key="W1" value="762.0101514953105" />
+    </decayedShown>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -101,26 +158,29 @@
     "Spring Boot.CardsApplication.executor": "Run",
     "Spring Boot.ConfigserverApplication.executor": "Run",
     "Spring Boot.LoansApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "spring__cloud__config",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Microservice_Spring_Boot/Workspace/configserver/src/main/resources/config",
+    "last_opened_file_path": "/Users/hounlyhour/Developers/Microservice/microservice_mini_bank",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "spring",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Microservice_Spring_Boot\Workspace\configserver\src\main\resources\config" />
       <recent name="D:\Microservice_Spring_Boot\Workspace\loans\src\main\resources" />
       <recent name="D:\Microservice_Spring_Boot\Workspace\cards\src\main\resources" />
     </key>
@@ -152,19 +212,10 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LoansApplication">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.ConfigserverApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
-        <env name="SPRING_PROFILES_ACTIVE" value="prod " />
+        <env name="SPRING_PROFILES_ACTIVE" value="prod" />
       </envs>
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -174,10 +225,10 @@
       </method>
     </configuration>
     <configuration name="CardsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="prod" />
+      </envs>
       <module name="cards" />
-      <selectedOptions>
-        <option name="environmentVariables" />
-      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jing.cards.CardsApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,8 +242,10 @@
       </method>
     </configuration>
     <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="prod" />
+      </envs>
       <module name="loans" />
-      <option name="PROGRAM_PARAMETERS" value="--spring.profiles.active=prod" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jing.loans.LoansApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,8 +255,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.33514.17" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.33514.17" />
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
       </set>
     </attachedChunks>
   </component>
@@ -243,5 +296,26 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.integration:spring-integration-core" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-stream" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
