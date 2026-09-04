@@ -2,6 +2,8 @@ server:
   port: 8090
 
 spring:
+  application:
+    name: "loans"
   datasource:
     url: jdbc:h2:mem:loans
     driver-class-name: org.h2.Driver
@@ -16,20 +18,11 @@ spring:
       ddl-auto: update
     show-sql: true
   config:
-    import:
-      - "application_qa.yaml"
-      - "application_prod.yaml"
-  profiles:
-    active: "qas"
+    import: "optional:configserver:http://localhost:8072/"
 
-build:
-  version: "3.2"
 
-loans:
-  message: "Welcome to EAZYBANK loans related to local APIs"
-  contactDetails:
-    name: "JING - Full Stack Developer"
-    email: "jing@gmail.com"
-  onCallSupport:
-    - (333) 321-1234
-    - (333) 325-1254
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

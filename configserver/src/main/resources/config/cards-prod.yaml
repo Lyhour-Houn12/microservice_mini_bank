@@ -1,10 +1,5 @@
-spring:
-  config:
-    activate:
-      on-profile: "card_prod"
-
 build:
-  version: "0.1"
+  version: "2.0"
 
 cards:
   message: "Welcome to EAZYBANK cards related to PROD APIs"
@@ -12,5 +7,5 @@ cards:
     name: "JING - Product Owner"
     email: "jing@gmail.com"
   onSupportCall:
-    - (333) 321-1234
-    - (333) 325-1254
+    - (222) 321-1234
+    - (222) 325-1254

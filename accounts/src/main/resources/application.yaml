@@ -2,6 +2,9 @@ server:
   port: 8080
 
 spring:
+  application:
+    name: "accounts"
+
   datasource:
     url: jdbc:h2:mem:account
     driver-class-name: org.h2.Driver
@@ -16,21 +19,20 @@ spring:
       ddl-auto: update
     show-sql: true
   config:
-    import:
-      - "application_qa.yaml"
-      - "application_prod.yaml"
-  profiles:
-    active: "qa"
+    import: "optional:configserver:http://localhost:8072/"
 
 
-build:
-  version: "3.0"
+#  By initial spring already know this properties
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
-accounts:
-  message: "Welcome to EazyBank accounts related local APIs"
-  contactDetails:
-    name: "Jond Doe - Developer"
-    email: "john@gmail.com"
-  onCallSupport:
-    -(555) 555-1234
-    -(555) 555-1235
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

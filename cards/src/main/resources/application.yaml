@@ -1,6 +1,10 @@
 server:
   port: 8070
 spring:
+    application:
+      name: "cards"
+    profiles:
+      active: "qa"
     datasource:
       url: jdbc:h2:mem:cards
       driver-class-name: org.h2.Driver
@@ -15,22 +19,14 @@ spring:
         ddl-auto: update
       show-sql: true
     config:
-      import:
-        - "application_qa.yaml"
-        - "application_prod.yaml"
-    profiles:
-      active: "card_qa"
+      import: "optional:configserver:http://localhost:8072/"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 
 
-build:
-  version: "1.0"
 
-cards:
-  message: "Welcome to EAZYBANK cards related to local APIs"
-  contactDetails:
-    name: "Houn Lyhour - Software Engineering"
-    email: "lhour@gmail.com"
-  onSupportCall:
-    - (111) 321-1234
-    - (111) 325-1254

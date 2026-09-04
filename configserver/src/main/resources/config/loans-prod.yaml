@@ -1,0 +1,11 @@
+build:
+  version: "4.0"
+
+loans:
+  message: "Welcome to EAZYBANK loans related to PROD APIs"
+  contactDetails:
+    name: "JING - Production Loans"
+    email: "jing@gmail.com"
+  onCallSupport:
+    - (222) 321-1234
+    - (222) 325-1254

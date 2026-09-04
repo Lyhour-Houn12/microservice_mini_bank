@@ -1,0 +1,20 @@
+services:
+  network-deploy-services:
+    networks:
+      - eazybank
+
+  microserivce-base-config:
+    extends:
+      service: network-deploy-services
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    environment:
+      SPRING_RABBITMQ_HOST: "rabbitmq"
+  microservice-configserver-config:
+    extends:
+      service: microserivce-base-config
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_CONFIG_IMPORT: configserver:http://configserver:8072/
