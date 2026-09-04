@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aab53b8-098a-4766-a52f-eea0e298ffd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/microservice_mini_bank.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configserver/src/main/java/com/jing/configserver/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/prod/common-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/qa/common-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/payload/dto/AccountContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/payload/dto/AccountContactInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/jing/cards/dto/CardDetailsInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/jing/cards/dto/CardDetailsInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/jing/loans/dto/LoansContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/jing/loans/dto/LoansContactInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +43,12 @@
     &quot;assignee&quot;: &quot;Lyhour-Houn12&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Lyhour-Houn12/microservice_mini_bank.git&quot;,
-    &quot;accountId&quot;: &quot;c3ab7576-e7b0-4056-8b34-f70b07a09cd0&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Lyhour-Houn12/microservice_mini_bank.git",
+    "accountId": "c3ab7576-e7b0-4056-8b34-f70b07a09cd0"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -73,61 +66,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.6421150696852777E-34" />
-      <entry key="MS500" value="1.750171942751531E-7" />
-      <entry key="S2" value="0.020455006133191428" />
-      <entry key="S5" value="0.21694529555548944" />
-      <entry key="S10" value="0.5647534246085552" />
-      <entry key="S30" value="1.5155702695521496" />
-      <entry key="S60" value="2.099149252139415" />
-      <entry key="M2" value="2.6767567313575107" />
-      <entry key="M5" value="6.371153420999967" />
-      <entry key="M10" value="17.57425986433224" />
-      <entry key="M15" value="31.791555377377094" />
-      <entry key="M30" value="83.06544610559071" />
-      <entry key="H1" value="184.78431223437008" />
-      <entry key="H2" value="325.32734855374775" />
-      <entry key="H4" value="456.9763391343566" />
-      <entry key="D1" value="626.0113744321554" />
-      <entry key="W1" value="662.6359916636047" />
+      <entry key="MS100" value="2.158238085705376" />
+      <entry key="MS500" value="4.372470693347389" />
+      <entry key="S2" value="7.449097389471678" />
+      <entry key="S5" value="14.877273015551573" />
+      <entry key="S10" value="25.66093767759656" />
+      <entry key="S30" value="49.41736300785571" />
+      <entry key="S60" value="64.79766725108036" />
+      <entry key="M2" value="79.7872138289094" />
+      <entry key="M5" value="111.72670051772684" />
+      <entry key="M10" value="157.07539331449757" />
+      <entry key="M15" value="196.15991703567175" />
+      <entry key="M30" value="312.1124347334014" />
+      <entry key="H1" value="559.3861919311004" />
+      <entry key="H2" value="969.3526785267284" />
+      <entry key="H4" value="1458.7582214258243" />
+      <entry key="D1" value="2288.5948151213074" />
+      <entry key="W1" value="2503.3159684905895" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.000001405972688" />
-      <entry key="MS500" value="1.0675453376274595" />
-      <entry key="S2" value="1.5097994996030135" />
-      <entry key="S5" value="1.7682770352429829" />
-      <entry key="S10" value="1.9664857092080998" />
-      <entry key="S30" value="2.6701318181612725" />
-      <entry key="S60" value="3.1915036950491675" />
-      <entry key="M2" value="3.7002240562021393" />
-      <entry key="M5" value="4.854430034206354" />
-      <entry key="M10" value="7.730024932387955" />
-      <entry key="M15" value="11.557320265682225" />
-      <entry key="M30" value="23.66007813910608" />
-      <entry key="H1" value="42.2467708408781" />
-      <entry key="H2" value="62.14063711913947" />
-      <entry key="H4" value="77.84447154719135" />
-      <entry key="D1" value="95.73401980373677" />
-      <entry key="W1" value="99.37448858323128" />
+      <entry key="MS100" value="8.815435697660936E-83" />
+      <entry key="MS500" value="3.881939444168211E-17" />
+      <entry key="S2" value="7.893365062789832E-5" />
+      <entry key="S5" value="0.022850982390632654" />
+      <entry key="S10" value="0.15116541400278263" />
+      <entry key="S30" value="0.5327019077537669" />
+      <entry key="S60" value="0.7302251017149977" />
+      <entry key="M2" value="0.8733875105959716" />
+      <entry key="M5" value="1.233349816600646" />
+      <entry key="M10" value="2.592193738156608" />
+      <entry key="M15" value="4.606998390297652" />
+      <entry key="M30" value="11.340257464115725" />
+      <entry key="H1" value="25.821889555000336" />
+      <entry key="H2" value="55.27191738820753" />
+      <entry key="H4" value="96.68708742796845" />
+      <entry key="D1" value="173.0613961975525" />
+      <entry key="W1" value="193.33613788957427" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.5385470566217923E-6" />
-      <entry key="MS500" value="0.06879335909984435" />
-      <entry key="S2" value="0.5979320285747152" />
-      <entry key="S5" value="1.3170199472199213" />
-      <entry key="S10" value="2.078230631921617" />
-      <entry key="S30" value="3.942017643492548" />
-      <entry key="S60" value="5.139643927432192" />
-      <entry key="M2" value="6.290463780713411" />
-      <entry key="M5" value="11.184163067889534" />
-      <entry key="M10" value="25.27530230814835" />
-      <entry key="M15" value="43.32196006643099" />
-      <entry key="M30" value="106.6992881044536" />
-      <entry key="H1" value="227.00751145448504" />
-      <entry key="H2" value="387.45057444319093" />
-      <entry key="H4" value="534.8099240548752" />
-      <entry key="D1" value="721.7431743628654" />
-      <entry key="W1" value="762.0101514953105" />
+      <entry key="MS100" value="2.12045139531503" />
+      <entry key="MS500" value="4.3504064042596475" />
+      <entry key="S2" value="7.438196502093637" />
+      <entry key="S5" value="14.888856945273028" />
+      <entry key="S10" value="25.797811531681784" />
+      <entry key="S30" value="49.937609037976344" />
+      <entry key="S60" value="65.51950004558125" />
+      <entry key="M2" value="80.65550419308242" />
+      <entry key="M5" value="112.9569443462667" />
+      <entry key="M10" value="159.66404543752674" />
+      <entry key="M15" value="200.76273483486597" />
+      <entry key="M30" value="323.447534155453" />
+      <entry key="H1" value="585.2013378675524" />
+      <entry key="H2" value="1024.615595673995" />
+      <entry key="H4" value="1555.4362280337627" />
+      <entry key="D1" value="2461.6531839682193" />
+      <entry key="W1" value="2696.651614955744" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -164,7 +157,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/hounlyhour/Developers/Microservice/microservice_mini_bank",
+    "last_opened_file_path": "/Users/hounlyhour/Developers/Microservice/microservice_mini_bank/docker-compose/qa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -181,6 +174,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker-compose/qa" />
+      <recent name="$PROJECT_DIR$/docker-compose/prod" />
+      <recent name="$PROJECT_DIR$/docker-compose/default" />
       <recent name="D:\Microservice_Spring_Boot\Workspace\loans\src\main\resources" />
       <recent name="D:\Microservice_Spring_Boot\Workspace\cards\src\main\resources" />
     </key>
