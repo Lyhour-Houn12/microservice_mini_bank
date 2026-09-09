@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aab53b8-098a-4766-a52f-eea0e298ffd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/common-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/qa/common-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +43,12 @@
     &quot;assignee&quot;: &quot;Lyhour-Houn12&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Lyhour-Houn12/microservice_mini_bank.git",
-    "accountId": "c3ab7576-e7b0-4056-8b34-f70b07a09cd0"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Lyhour-Houn12/microservice_mini_bank.git&quot;,
+    &quot;accountId&quot;: &quot;c3ab7576-e7b0-4056-8b34-f70b07a09cd0&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -66,61 +66,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.158238085705376" />
-      <entry key="MS500" value="4.372470693347389" />
-      <entry key="S2" value="7.449097389471678" />
-      <entry key="S5" value="14.877273015551573" />
-      <entry key="S10" value="25.66093767759656" />
-      <entry key="S30" value="49.41736300785571" />
-      <entry key="S60" value="64.79766725108036" />
-      <entry key="M2" value="79.7872138289094" />
-      <entry key="M5" value="111.72670051772684" />
-      <entry key="M10" value="157.07539331449757" />
-      <entry key="M15" value="196.15991703567175" />
-      <entry key="M30" value="312.1124347334014" />
-      <entry key="H1" value="559.3861919311004" />
-      <entry key="H2" value="969.3526785267284" />
-      <entry key="H4" value="1458.7582214258243" />
-      <entry key="D1" value="2288.5948151213074" />
-      <entry key="W1" value="2503.3159684905895" />
+      <entry key="MS100" value="1.8698556171225735" />
+      <entry key="MS500" value="3.818028046778082" />
+      <entry key="S2" value="4.656234239987295" />
+      <entry key="S5" value="4.8580648367453865" />
+      <entry key="S10" value="4.928463362978054" />
+      <entry key="S30" value="5.523457393659581" />
+      <entry key="S60" value="9.389373379708239" />
+      <entry key="M2" value="21.20416073861612" />
+      <entry key="M5" value="66.43295216795921" />
+      <entry key="M10" value="168.2665104654636" />
+      <entry key="M15" value="278.2964803744808" />
+      <entry key="M30" value="573.7602046607151" />
+      <entry key="H1" value="1011.6502471153487" />
+      <entry key="H2" value="1604.2451090051657" />
+      <entry key="H4" value="2281.395668929543" />
+      <entry key="D1" value="3455.714260154301" />
+      <entry key="W1" value="3768.2896758238694" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="8.815435697660936E-83" />
-      <entry key="MS500" value="3.881939444168211E-17" />
-      <entry key="S2" value="7.893365062789832E-5" />
-      <entry key="S5" value="0.022850982390632654" />
-      <entry key="S10" value="0.15116541400278263" />
-      <entry key="S30" value="0.5327019077537669" />
-      <entry key="S60" value="0.7302251017149977" />
-      <entry key="M2" value="0.8733875105959716" />
-      <entry key="M5" value="1.233349816600646" />
-      <entry key="M10" value="2.592193738156608" />
-      <entry key="M15" value="4.606998390297652" />
-      <entry key="M30" value="11.340257464115725" />
-      <entry key="H1" value="25.821889555000336" />
-      <entry key="H2" value="55.27191738820753" />
-      <entry key="H4" value="96.68708742796845" />
-      <entry key="D1" value="173.0613961975525" />
-      <entry key="W1" value="193.33613788957427" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.108216257941795E-247" />
+      <entry key="S2" value="1.8245515124517701E-62" />
+      <entry key="S5" value="2.0159074291653144E-25" />
+      <entry key="S10" value="4.5092742115722226E-13" />
+      <entry key="S30" value="8.905171413312702E-5" />
+      <entry key="S60" value="0.012283506232166596" />
+      <entry key="M2" value="0.15505202256843983" />
+      <entry key="M5" value="1.197455176110199" />
+      <entry key="M10" value="4.785845023252708" />
+      <entry key="M15" value="9.004612053463061" />
+      <entry key="M30" value="20.184894828985154" />
+      <entry key="H1" value="37.97937551788937" />
+      <entry key="H2" value="69.29868843663101" />
+      <entry key="H4" value="115.40066493655446" />
+      <entry key="D1" value="209.49009476859865" />
+      <entry key="W1" value="236.12263753970373" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.12045139531503" />
-      <entry key="MS500" value="4.3504064042596475" />
-      <entry key="S2" value="7.438196502093637" />
-      <entry key="S5" value="14.888856945273028" />
-      <entry key="S10" value="25.797811531681784" />
-      <entry key="S30" value="49.937609037976344" />
-      <entry key="S60" value="65.51950004558125" />
-      <entry key="M2" value="80.65550419308242" />
-      <entry key="M5" value="112.9569443462667" />
-      <entry key="M10" value="159.66404543752674" />
-      <entry key="M15" value="200.76273483486597" />
-      <entry key="M30" value="323.447534155453" />
-      <entry key="H1" value="585.2013378675524" />
-      <entry key="H2" value="1024.615595673995" />
-      <entry key="H4" value="1555.4362280337627" />
-      <entry key="D1" value="2461.6531839682193" />
-      <entry key="W1" value="2696.651614955744" />
+      <entry key="MS100" value="1.7830870506776015" />
+      <entry key="MS500" value="3.7820728554093668" />
+      <entry key="S2" value="4.6452620374222" />
+      <entry key="S5" value="4.853485370305733" />
+      <entry key="S10" value="4.926140419143584" />
+      <entry key="S30" value="5.5226855501939465" />
+      <entry key="S60" value="9.400866670180049" />
+      <entry key="M2" value="21.35790134783563" />
+      <entry key="M5" value="67.62776660850548" />
+      <entry key="M10" value="173.04740574287257" />
+      <entry key="M15" value="287.29473400931084" />
+      <entry key="M30" value="593.9375511579668" />
+      <entry key="H1" value="1049.6217584089804" />
+      <entry key="H2" value="1673.534880680766" />
+      <entry key="H4" value="2396.7873006040054" />
+      <entry key="D1" value="3665.2010994931497" />
+      <entry key="W1" value="4004.411774463248" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -135,43 +135,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.AccountsApplication.executor": "Run",
-    "Spring Boot.CardsApplication.executor": "Run",
-    "Spring Boot.ConfigserverApplication.executor": "Run",
-    "Spring Boot.LoansApplication.executor": "Run",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "spring__cloud__config",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/hounlyhour/Developers/Microservice/microservice_mini_bank/docker-compose/qa",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "spring",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;using__postgres__database__in__microservices&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hounlyhour/Developers/Microservice/microservice_mini_bank/docker-compose/qa&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docker-compose/qa" />

@@ -6,15 +6,13 @@ spring:
     profiles:
       active: "qa"
     datasource:
-      url: jdbc:h2:mem:cards
-      driver-class-name: org.h2.Driver
-      username: sa
-      password: ""
-    h2:
-      console:
-        enabled: true
+      url: jdbc:postgresql://cards-db:5432/cards
+      driver-class-name: org.postgresql.Driver
+      username: postgres
+      password: postgres
+
     jpa:
-      database-platform: org.hibernate.dialect.H2Dialect
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
       hibernate:
         ddl-auto: update
       show-sql: true
