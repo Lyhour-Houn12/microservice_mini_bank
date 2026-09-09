@@ -32,10 +32,7 @@
 		<spring-cloud.version>2025.1.3</spring-cloud.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-h2console</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -58,11 +55,7 @@
 			<artifactId>spring-boot-starter-webmvc</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
+
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -173,7 +166,7 @@
 						</platforms>
 					</from>
 					<to>
-						<image>lyhour121/${project.artifactId}:s1</image>
+						<image>lyhour121/${project.artifactId}:s4</image>
 					</to>
 				</configuration>
 			</plugin>

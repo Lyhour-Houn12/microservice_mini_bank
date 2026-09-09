@@ -3,6 +3,20 @@ services:
     networks:
       - eazybank
 
+  microserivce-db-congig:
+    extends:
+      service: network-deploy-services
+    image: postgres:17
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d $${POSTGRES_DB}"]
+      timeout: 10s
+      retries: 10
+      interval: 10s
+      start_period: 10s
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
   microserivce-base-config:
     extends:
       service: network-deploy-services
@@ -12,6 +26,7 @@ services:
           memory: 700m
     environment:
       SPRING_RABBITMQ_HOST: "rabbitmq"
+
   microservice-configserver-config:
     extends:
       service: microserivce-base-config

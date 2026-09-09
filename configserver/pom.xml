@@ -98,7 +98,7 @@
 						</platforms>
 					</from>
 					<to>
-						<image>lyhour121/${project.artifactId}:s1</image>
+						<image>lyhour121/${project.artifactId}:s4</image>
 					</to>
 				</configuration>
 			</plugin>
