@@ -1,4 +1,4 @@
-package com.jing.loans.dto;
+package com.jing.accounts.payload.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotEmpty;
@@ -8,6 +8,7 @@ import jakarta.validation.constraints.PositiveOrZero;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 @Schema(name = "Loans",
         description = "Schema to hold Loan information"
 )

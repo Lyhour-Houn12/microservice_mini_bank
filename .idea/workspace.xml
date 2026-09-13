@@ -5,12 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aab53b8-098a-4766-a52f-eea0e298ffd2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/payload/dto/CardDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/payload/dto/CustomerDetailsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/payload/dto/LoanDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/CardsFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/LoanFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/mvnw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/mapper/CustomerMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
@@ -66,61 +82,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.8698556171225735" />
-      <entry key="MS500" value="3.818028046778082" />
-      <entry key="S2" value="4.656234239987295" />
-      <entry key="S5" value="4.8580648367453865" />
-      <entry key="S10" value="4.928463362978054" />
-      <entry key="S30" value="5.523457393659581" />
-      <entry key="S60" value="9.389373379708239" />
-      <entry key="M2" value="21.20416073861612" />
-      <entry key="M5" value="66.43295216795921" />
-      <entry key="M10" value="168.2665104654636" />
-      <entry key="M15" value="278.2964803744808" />
-      <entry key="M30" value="573.7602046607151" />
-      <entry key="H1" value="1011.6502471153487" />
-      <entry key="H2" value="1604.2451090051657" />
-      <entry key="H4" value="2281.395668929543" />
-      <entry key="D1" value="3455.714260154301" />
-      <entry key="W1" value="3768.2896758238694" />
+      <entry key="MS100" value="2.6664236957696756" />
+      <entry key="MS500" value="5.440144694866672" />
+      <entry key="S2" value="11.052894427028063" />
+      <entry key="S5" value="17.838605376352906" />
+      <entry key="S10" value="28.979714617037626" />
+      <entry key="S30" value="66.00570810389014" />
+      <entry key="S60" value="97.94537238818576" />
+      <entry key="M2" value="136.11326103316273" />
+      <entry key="M5" value="199.31140915288316" />
+      <entry key="M10" value="256.5684368488212" />
+      <entry key="M15" value="301.296974095266" />
+      <entry key="M30" value="461.7523726440646" />
+      <entry key="H1" value="853.3857927524696" />
+      <entry key="H2" value="1529.743213791062" />
+      <entry key="H4" value="2377.821542744386" />
+      <entry key="D1" value="3949.122989450559" />
+      <entry key="W1" value="4384.354761195035" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.108216257941795E-247" />
-      <entry key="S2" value="1.8245515124517701E-62" />
-      <entry key="S5" value="2.0159074291653144E-25" />
-      <entry key="S10" value="4.5092742115722226E-13" />
-      <entry key="S30" value="8.905171413312702E-5" />
-      <entry key="S60" value="0.012283506232166596" />
-      <entry key="M2" value="0.15505202256843983" />
-      <entry key="M5" value="1.197455176110199" />
-      <entry key="M10" value="4.785845023252708" />
-      <entry key="M15" value="9.004612053463061" />
-      <entry key="M30" value="20.184894828985154" />
-      <entry key="H1" value="37.97937551788937" />
-      <entry key="H2" value="69.29868843663101" />
-      <entry key="H4" value="115.40066493655446" />
-      <entry key="D1" value="209.49009476859865" />
-      <entry key="W1" value="236.12263753970373" />
+      <entry key="MS500" value="2.7344217401515413E-152" />
+      <entry key="S2" value="1.9230864392433555E-38" />
+      <entry key="S5" value="1.4989350472793388E-15" />
+      <entry key="S10" value="6.944845949855896E-8" />
+      <entry key="S30" value="0.012282824840322141" />
+      <entry key="S60" value="0.3234771909172512" />
+      <entry key="M2" value="2.167842941676628" />
+      <entry key="M5" value="10.8743231852002" />
+      <entry key="M10" value="28.498781920827607" />
+      <entry key="M15" value="44.48901465041014" />
+      <entry key="M30" value="78.94133796382911" />
+      <entry key="H1" value="119.6071525356217" />
+      <entry key="H2" value="168.72965642132831" />
+      <entry key="H4" value="229.258155418154" />
+      <entry key="D1" value="351.70774196634915" />
+      <entry key="W1" value="387.4064130908186" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.7830870506776015" />
-      <entry key="MS500" value="3.7820728554093668" />
-      <entry key="S2" value="4.6452620374222" />
-      <entry key="S5" value="4.853485370305733" />
-      <entry key="S10" value="4.926140419143584" />
-      <entry key="S30" value="5.5226855501939465" />
-      <entry key="S60" value="9.400866670180049" />
-      <entry key="M2" value="21.35790134783563" />
-      <entry key="M5" value="67.62776660850548" />
-      <entry key="M10" value="173.04740574287257" />
-      <entry key="M15" value="287.29473400931084" />
-      <entry key="M30" value="593.9375511579668" />
-      <entry key="H1" value="1049.6217584089804" />
-      <entry key="H2" value="1673.534880680766" />
-      <entry key="H4" value="2396.7873006040054" />
-      <entry key="D1" value="3665.2010994931497" />
-      <entry key="W1" value="4004.411774463248" />
+      <entry key="MS100" value="2.5277601581422715" />
+      <entry key="MS500" value="5.3847462412652165" />
+      <entry key="S2" value="11.024943970900626" />
+      <entry key="S5" value="17.819982095380716" />
+      <entry key="S10" value="28.963797437624528" />
+      <entry key="S30" value="66.00507651700568" />
+      <entry key="S60" value="98.25669704577352" />
+      <entry key="M2" value="138.26389922807294" />
+      <entry key="M5" value="210.1494505913807" />
+      <entry key="M10" value="285.00512059901496" />
+      <entry key="M15" value="345.71553579441996" />
+      <entry key="M30" value="540.628178705243" />
+      <entry key="H1" value="972.94456914337" />
+      <entry key="H2" value="1698.4400709115148" />
+      <entry key="H4" value="2607.057572741986" />
+      <entry key="D1" value="4300.824884975312" />
+      <entry key="W1" value="4771.760244446727" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -135,43 +151,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;using__postgres__database__in__microservices&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hounlyhour/Developers/Microservice/microservice_mini_bank/docker-compose/qa&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.AccountsApplication.executor": "Run",
+    "Spring Boot.CardsApplication.executor": "Run",
+    "Spring Boot.ConfigserverApplication.executor": "Run",
+    "Spring Boot.EurekaserverApplication.executor": "Run",
+    "Spring Boot.LoansApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "dev__learning__discovery__registry__loadbalancer",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/hounlyhour/Developers/Microservice/microservice_mini_bank/docker-compose/qa",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.31544504",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "spring",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docker-compose/qa" />
@@ -181,6 +198,7 @@
       <recent name="D:\Microservice_Spring_Boot\Workspace\cards\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jing.accounts.payload.dto" />
       <recent name="com.jing.loans.exception" />
     </key>
   </component>
@@ -201,6 +219,7 @@
               <entry key="AccountsApplication" value="STOPPED" />
               <entry key="CardsApplication" value="STOPPED" />
               <entry key="ConfigserverApplication" value="STOPPED" />
+              <entry key="EurekaserverApplication" value="STOPPED" />
               <entry key="LoansApplication" value="STOPPED" />
             </map>
           </value>
@@ -237,6 +256,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eurekaserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jing.eurekaserver.EurekaserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="SPRING_PROFILES_ACTIVE" value="prod" />
@@ -251,8 +277,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
       </set>
     </attachedChunks>
   </component>

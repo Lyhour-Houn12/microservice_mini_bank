@@ -62,7 +62,7 @@ public class AccountController {
             description = "HTTP status OK"
     )
     @GetMapping("/fetch")
-    public ResponseEntity<CustomerDto> fetchAccount(@Valid @RequestParam @Pattern(regexp = "^$|^[0-9]{9}$", message = "Mobile phone must be 10 digits") String mobilePhone){
+    public ResponseEntity<CustomerDto> fetchAccount(@Valid @RequestParam @Pattern(regexp = "^$|^[0-9]{9}$", message = "Mobile phone must be 9 digits") String mobilePhone){
         CustomerDto customerDto = accountService.fetchCustomerDetails(mobilePhone);
         return ResponseEntity.status(HttpStatus.OK).body(customerDto);
     }

@@ -1,7 +1,7 @@
 package com.jing.accounts.mapper;
 
-import com.jing.accounts.entity.Account;
 import com.jing.accounts.entity.Customer;
+import com.jing.accounts.payload.dto.CustomerDetailsDto;
 import com.jing.accounts.payload.dto.CustomerDto;
 import org.springframework.stereotype.Component;
 
@@ -29,5 +29,17 @@ public class CustomerMapper {
         customerDto.setEmail(customer.getEmail());
         customerDto.setMobilePhone(customer.getMobilePhone());
         return customerDto;
+    }
+
+    public CustomerDetailsDto customerDerailsDto(Customer customer) {
+        if(customer == null) {
+            return null;
+        }
+        CustomerDetailsDto customerDetailsDto = new CustomerDetailsDto();
+        customerDetailsDto.setName(customer.getName());
+        customerDetailsDto.setEmail(customer.getEmail());
+        customerDetailsDto.setMobilePhone(customer.getMobilePhone());
+        return customerDetailsDto;
+
     }
 }

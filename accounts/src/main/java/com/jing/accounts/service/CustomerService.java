@@ -1,7 +1,7 @@
-package com.jing.accounts.service.impl;
+package com.jing.accounts.service;
 
-import com.jing.accounts.payload.dto.CustomerDerailsDto;
+import com.jing.accounts.payload.dto.CustomerDetailsDto;
 
 public interface CustomerService {
-    CustomerDerailsDto getDetailsCustomer();
+    CustomerDetailsDto getDetailsCustomer(String mobileNumber);
 }

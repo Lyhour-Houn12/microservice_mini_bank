@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CustomerDerailsDto {
+public class CustomerDetailsDto {
 
     @Schema(
             description = "Name of the customer", example = "Houn Lyhour"
