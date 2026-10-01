@@ -15,6 +15,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,6 +32,8 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @Validated
 public class LoanController {
+    private static final Logger logger = LoggerFactory.getLogger(LoanController.class);
+
     private final LoanService loanService;
 
     @Value("${build.version}")
@@ -84,9 +88,10 @@ public class LoanController {
     }
     )
     @GetMapping("/fetch")
-    public ResponseEntity<LoanDto> fetchLoanDetails(@Valid @RequestParam
+    public ResponseEntity<LoanDto> fetchLoanDetails(@RequestHeader("eazybank-correlation-id") String correlationId, @Valid @RequestParam
                                                      @Pattern(regexp="(^$|[0-9]{9})",message = "Mobile number must be 9 digits")
                                                      String mobileNumber) {
+        logger.debug("correlation-id found {}", correlationId);
         LoanDto loansDto = loanService.fetchLoan(mobileNumber);
         return ResponseEntity.status(HttpStatus.OK).body(loansDto);
     }

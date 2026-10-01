@@ -20,20 +20,16 @@ spring:
     import: "optional:configserver:http://localhost:8072/"
 
 
-#  By initial spring already know this properties
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-
-
-
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
   endpoint:
     shutdown:
       access: unrestricted
@@ -56,3 +52,8 @@ info:
     description: "Eazy Bank Account For Application"
     version: "1.0.0"
 
+logging:
+  level:
+    com:
+      jing:
+        accounts: DEBUG

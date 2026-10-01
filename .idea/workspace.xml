@@ -5,31 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aab53b8-098a-4766-a52f-eea0e298ffd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/payload/dto/CardDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/payload/dto/CustomerDetailsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/payload/dto/LoanDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/CardsFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/LoanFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/jing/gatewayserver/filter/FilterUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/jing/gatewayserver/filter/RequestTraceFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/jing/gatewayserver/filter/ResponseTraceFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/AccountsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/mapper/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/CardsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/CardsFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/LoanFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/LoanFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/jing/cards/controller/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/jing/cards/controller/CardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/jing/loans/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/jing/loans/controller/LoanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,61 +74,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.6664236957696756" />
-      <entry key="MS500" value="5.440144694866672" />
-      <entry key="S2" value="11.052894427028063" />
-      <entry key="S5" value="17.838605376352906" />
-      <entry key="S10" value="28.979714617037626" />
-      <entry key="S30" value="66.00570810389014" />
-      <entry key="S60" value="97.94537238818576" />
-      <entry key="M2" value="136.11326103316273" />
-      <entry key="M5" value="199.31140915288316" />
-      <entry key="M10" value="256.5684368488212" />
-      <entry key="M15" value="301.296974095266" />
-      <entry key="M30" value="461.7523726440646" />
-      <entry key="H1" value="853.3857927524696" />
-      <entry key="H2" value="1529.743213791062" />
-      <entry key="H4" value="2377.821542744386" />
-      <entry key="D1" value="3949.122989450559" />
-      <entry key="W1" value="4384.354761195035" />
+      <entry key="MS100" value="1.0429629706897403" />
+      <entry key="MS500" value="2.6520969179048297" />
+      <entry key="S2" value="9.314482835418799" />
+      <entry key="S5" value="15.41701222901044" />
+      <entry key="S10" value="18.71136958541328" />
+      <entry key="S30" value="22.090496150630553" />
+      <entry key="S60" value="28.85477005914908" />
+      <entry key="M2" value="47.07137780296032" />
+      <entry key="M5" value="87.8820486031485" />
+      <entry key="M10" value="135.32787191101218" />
+      <entry key="M15" value="182.716754040792" />
+      <entry key="M30" value="341.1600218075398" />
+      <entry key="H1" value="707.366255426704" />
+      <entry key="H2" value="1398.7566109695504" />
+      <entry key="H4" value="2333.745176990419" />
+      <entry key="D1" value="4175.174895152702" />
+      <entry key="W1" value="4702.772872820783" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.7344217401515413E-152" />
-      <entry key="S2" value="1.9230864392433555E-38" />
-      <entry key="S5" value="1.4989350472793388E-15" />
-      <entry key="S10" value="6.944845949855896E-8" />
-      <entry key="S30" value="0.012282824840322141" />
-      <entry key="S60" value="0.3234771909172512" />
-      <entry key="M2" value="2.167842941676628" />
-      <entry key="M5" value="10.8743231852002" />
-      <entry key="M10" value="28.498781920827607" />
-      <entry key="M15" value="44.48901465041014" />
-      <entry key="M30" value="78.94133796382911" />
-      <entry key="H1" value="119.6071525356217" />
-      <entry key="H2" value="168.72965642132831" />
-      <entry key="H4" value="229.258155418154" />
-      <entry key="D1" value="351.70774196634915" />
-      <entry key="W1" value="387.4064130908186" />
+      <entry key="MS500" value="7.163862184598392E-101" />
+      <entry key="S2" value="9.199983196006197E-26" />
+      <entry key="S5" value="9.717407796502324E-11" />
+      <entry key="S10" value="1.0896150133199806E-5" />
+      <entry key="S30" value="0.05153958026234624" />
+      <entry key="S60" value="0.7136820144114425" />
+      <entry key="M2" value="3.5881264252485887" />
+      <entry key="M5" value="13.60378616544602" />
+      <entry key="M10" value="30.11209192975976" />
+      <entry key="M15" value="45.591217623803374" />
+      <entry key="M30" value="86.48707357479586" />
+      <entry key="H1" value="145.50670035083672" />
+      <entry key="H2" value="216.6775395392316" />
+      <entry key="H4" value="296.35915888279476" />
+      <entry key="D1" value="449.9830981430424" />
+      <entry key="W1" value="494.7184582797255" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.5277601581422715" />
-      <entry key="MS500" value="5.3847462412652165" />
-      <entry key="S2" value="11.024943970900626" />
-      <entry key="S5" value="17.819982095380716" />
-      <entry key="S10" value="28.963797437624528" />
-      <entry key="S30" value="66.00507651700568" />
-      <entry key="S60" value="98.25669704577352" />
-      <entry key="M2" value="138.26389922807294" />
-      <entry key="M5" value="210.1494505913807" />
-      <entry key="M10" value="285.00512059901496" />
-      <entry key="M15" value="345.71553579441996" />
-      <entry key="M30" value="540.628178705243" />
-      <entry key="H1" value="972.94456914337" />
-      <entry key="H2" value="1698.4400709115148" />
-      <entry key="H4" value="2607.057572741986" />
-      <entry key="D1" value="4300.824884975312" />
-      <entry key="W1" value="4771.760244446727" />
+      <entry key="MS100" value="0.9729734224703979" />
+      <entry key="MS500" value="2.6158781959887474" />
+      <entry key="S2" value="9.284028069983062" />
+      <entry key="S5" value="15.397224109352997" />
+      <entry key="S10" value="18.699454238132404" />
+      <entry key="S30" value="22.136545989444983" />
+      <entry key="S60" value="29.55643227836585" />
+      <entry key="M2" value="50.62494648489408" />
+      <entry key="M5" value="101.4220531148727" />
+      <entry key="M10" value="165.36264362039722" />
+      <entry key="M15" value="228.2275474736756" />
+      <entry key="M30" value="427.5695672941838" />
+      <entry key="H1" value="852.8090426553946" />
+      <entry key="H2" value="1615.388277060237" />
+      <entry key="H4" value="2630.073627491639" />
+      <entry key="D1" value="4625.150195325335" />
+      <entry key="W1" value="5197.490100504369" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -167,10 +159,11 @@
     "Spring Boot.CardsApplication.executor": "Run",
     "Spring Boot.ConfigserverApplication.executor": "Run",
     "Spring Boot.EurekaserverApplication.executor": "Run",
+    "Spring Boot.GatewayserverApplication.executor": "Run",
     "Spring Boot.LoansApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "dev__learning__discovery__registry__loadbalancer",
+    "git-widget-placeholder": "dev__spring__cloud__gateway",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -217,10 +210,9 @@
           <value>
             <map>
               <entry key="AccountsApplication" value="STOPPED" />
-              <entry key="CardsApplication" value="STOPPED" />
               <entry key="ConfigserverApplication" value="STOPPED" />
               <entry key="EurekaserverApplication" value="STOPPED" />
-              <entry key="LoansApplication" value="STOPPED" />
+              <entry key="GatewayserverApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -259,6 +251,14 @@
     <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="eurekaserver" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jing.eurekaserver.EurekaserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="gatewayserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jing.gatewayserver.GatewayserverApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
