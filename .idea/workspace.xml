@@ -5,31 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aab53b8-098a-4766-a52f-eea0e298ffd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/CardsFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/LoanFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/jing/gatewayserver/fallback/FallbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsonCatalog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/observability/alloy/alloy-local-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/observability/grafana/datasource.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/observability/loki/loki-config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/observability/prometheus/prometheus.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose/observability/tempo/tempo.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/CardsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/CardsFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/LoanFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/client/LoanFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/jing/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/com/jing/gatewayserver/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/jing/gatewayserver/GatewayserverApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/com/jing/gatewayserver/filter/ResponseTraceFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/jing/gatewayserver/filter/ResponseTraceFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/jing/loans/controller/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/jing/loans/controller/LoanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/hounlyhour/Developers/Microservice/microservice_mini_bank" value="3K7h7mx71c40N9OmksFsRZAM4Tw" />
+    </persistenceIdMap>
   </component>
   <component name="EmbeddingIndexingInfo">
     <option name="cachedIndexableFilesCount" value="99" />
@@ -76,61 +83,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.3346437816340373" />
-      <entry key="MS500" value="5.559162471365042" />
-      <entry key="S2" value="11.168807518483863" />
-      <entry key="S5" value="17.77403338445622" />
-      <entry key="S10" value="22.583197638152143" />
-      <entry key="S30" value="31.86900680715095" />
-      <entry key="S60" value="40.8139471470596" />
-      <entry key="M2" value="50.06592033856997" />
-      <entry key="M5" value="61.93840701286428" />
-      <entry key="M10" value="72.45142152254166" />
-      <entry key="M15" value="81.99805374972071" />
-      <entry key="M30" value="131.6172926577424" />
-      <entry key="H1" value="333.071656488796" />
-      <entry key="H2" value="902.1106699598323" />
-      <entry key="H4" value="1900.4695175645832" />
-      <entry key="D1" value="4299.5014860666" />
-      <entry key="W1" value="5059.967411419286" />
+      <entry key="MS100" value="2.0459128008931176" />
+      <entry key="MS500" value="5.686319691835606" />
+      <entry key="S2" value="12.027852596606555" />
+      <entry key="S5" value="14.714847844773525" />
+      <entry key="S10" value="15.800633903102444" />
+      <entry key="S30" value="16.641774393340405" />
+      <entry key="S60" value="18.750452881336855" />
+      <entry key="M2" value="31.297566026829156" />
+      <entry key="M5" value="84.43852072981757" />
+      <entry key="M10" value="157.02781786539376" />
+      <entry key="M15" value="210.61348455297352" />
+      <entry key="M30" value="322.81866166924266" />
+      <entry key="H1" value="526.8481327651648" />
+      <entry key="H2" value="1048.9945324998255" />
+      <entry key="H4" value="2037.9354900239855" />
+      <entry key="D1" value="4625.638681703191" />
+      <entry key="W1" value="5483.217384796812" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.622521778955647E-25" />
-      <entry key="MS500" value="1.631653046197335E-5" />
-      <entry key="S2" value="0.10173517867221282" />
-      <entry key="S5" value="0.6513312763441854" />
-      <entry key="S10" value="1.4151706185874044" />
-      <entry key="S30" value="3.57856446268341" />
-      <entry key="S60" value="5.539018831858654" />
-      <entry key="M2" value="7.547539874042855" />
-      <entry key="M5" value="11.068065457176475" />
-      <entry key="M10" value="15.65002673795178" />
-      <entry key="M15" value="19.81161039938423" />
-      <entry key="M30" value="34.02789744615302" />
-      <entry key="H1" value="74.06041513637344" />
-      <entry key="H2" value="154.64418411602367" />
-      <entry key="H4" value="264.16836758016075" />
-      <entry key="D1" value="493.7133533602067" />
-      <entry key="W1" value="563.8611553277409" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="4.165292671824547E-189" />
+      <entry key="S2" value="8.422666400817445E-48" />
+      <entry key="S5" value="1.8847402615590233E-19" />
+      <entry key="S10" value="5.938130187034531E-10" />
+      <entry key="S30" value="0.0015117638948829205" />
+      <entry key="S60" value="0.073607568033906" />
+      <entry key="M2" value="0.6688610096854053" />
+      <entry key="M5" value="3.7370746292401043" />
+      <entry key="M10" value="8.680735333100605" />
+      <entry key="M15" value="13.324623442560336" />
+      <entry key="M30" value="27.27098769939699" />
+      <entry key="H1" value="61.65781903993018" />
+      <entry key="H2" value="137.9984211289551" />
+      <entry key="H4" value="252.52701621098797" />
+      <entry key="D1" value="509.50104225405" />
+      <entry key="W1" value="590.6878695948211" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.233919896113469" />
-      <entry key="MS500" value="5.508027059900235" />
-      <entry key="S2" value="11.230413346320242" />
-      <entry key="S5" value="18.36835504521005" />
-      <entry key="S10" value="23.93968746323058" />
-      <entry key="S30" value="35.39634572643862" />
-      <entry key="S60" value="46.31195504410221" />
-      <entry key="M2" value="57.57905332090531" />
-      <entry key="M5" value="72.9663240259575" />
-      <entry key="M10" value="88.0598576192553" />
-      <entry key="M15" value="101.76967731940282" />
-      <entry key="M30" value="165.60781439960783" />
-      <entry key="H1" value="407.0934665535278" />
-      <entry key="H2" value="1056.7177005794508" />
-      <entry key="H4" value="2164.6078220396457" />
-      <entry key="D1" value="4793.2057791421175" />
-      <entry key="W1" value="5623.827091332823" />
+      <entry key="MS100" value="1.9681583846368227" />
+      <entry key="MS500" value="5.630156662158392" />
+      <entry key="S2" value="11.994156807311374" />
+      <entry key="S5" value="14.697952170980818" />
+      <entry key="S10" value="15.791491462580346" />
+      <entry key="S30" value="16.640032208909673" />
+      <entry key="S60" value="18.821551856788638" />
+      <entry key="M2" value="31.9620495466685" />
+      <entry key="M5" value="88.16859599531963" />
+      <entry key="M10" value="165.7001585394031" />
+      <entry key="M15" value="223.9277026837483" />
+      <entry key="M30" value="350.0732947583466" />
+      <entry key="H1" value="588.4815949940704" />
+      <entry key="H2" value="1186.963631099879" />
+      <entry key="H4" value="2290.4356229285227" />
+      <entry key="D1" value="5135.130680260956" />
+      <entry key="W1" value="6073.903752747924" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -141,56 +148,78 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3IJbGpTpD3kkTlGCj30oopEWpg3" />
+  <component name="ProjectSessionTemplates">
+    <option name="inlineTemplate">
+      <template>
+        <option name="modeId" value="InlineAgent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="LOCAL" />
+      </template>
+    </option>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatewayserverApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev__microservice__resilient&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hounlyhour/Developers/Microservice/microservice_mini_bank/docker-compose/qa&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.31544504&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "KUBERNETES_SUPPRESS_CONFIG_CLUSTER_SUGGESTION": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AccountsApplication.executor": "Run",
+    "Spring Boot.CardsApplication.executor": "Run",
+    "Spring Boot.ConfigserverApplication.executor": "Run",
+    "Spring Boot.EurekaserverApplication.executor": "Run",
+    "Spring Boot.GatewayserverApplication.executor": "Run",
+    "Spring Boot.LoansApplication.executor": "Debug",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "dev__monitoring__and__observability",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/hounlyhour/Developers/Microservice/microservice_mini_bank/docker-compose/observability/tempo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.31544504",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "spring",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/docker-compose/qa" />
-      <recent name="$PROJECT_DIR$/docker-compose/prod" />
-      <recent name="$PROJECT_DIR$/docker-compose/default" />
-      <recent name="D:\Microservice_Spring_Boot\Workspace\loans\src\main\resources" />
-      <recent name="D:\Microservice_Spring_Boot\Workspace\cards\src\main\resources" />
+      <recent name="$PROJECT_DIR$/docker-compose/observability/tempo" />
+      <recent name="$PROJECT_DIR$/docker-compose/observability/prometheus" />
+      <recent name="$PROJECT_DIR$/docker-compose/default/observability/prometheus" />
+      <recent name="$PROJECT_DIR$/docker-compose/default/observability/tempo" />
+      <recent name="$PROJECT_DIR$/docker-compose/default/observability/grafana" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker-compose/observability" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jing.accounts.payload.dto" />
