@@ -6,7 +6,8 @@ spring:
     name: "accounts"
 
   datasource:
-    url: jdbc:postgresql://accounts-db:5432/accounts
+#    url: jdbc:postgresql://localhost:5435/accounts # ON LOCALHOST, USE PORT 5435 FOR ACCOUNTS DATABASE
+    url: jdbc:postgresql://accounts-db:5432/accounts # ON DOCKER, USE PORT 5432 FOR ACCOUNTS DATABASE
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: postgres
@@ -18,6 +19,12 @@ spring:
     show-sql: true
   config:
     import: "optional:configserver:http://localhost:8072/"
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
+
+
 
 
 management:
@@ -45,6 +52,32 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        sliding-window-size: 10
+        permitted-number-of-calls-in-half-open-state: 2
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+  retry:
+    configs:
+      default:
+        max-attempts: 3
+        wait-duration: 500
+        enable-exponential-backoff: true
+        exponential-backoff-multiplier: 2
+        retry-exceptions:
+          - java.util.concurrent.TimeoutException
+        ignore-exceptions:
+          - java.lang.NullPointerException
+  ratelimiter:
+    configs:
+      default:
+        timeout-duration: 1000
+        limit-refresh-period: 5000
+        limit-for-period: 1
 
 info:
   app:

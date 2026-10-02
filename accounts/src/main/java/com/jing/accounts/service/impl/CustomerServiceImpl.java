@@ -38,13 +38,14 @@ public class CustomerServiceImpl implements CustomerService {
 
         AccountDto accountDto = accountMapper.toDto(account);
 
+
         ResponseEntity<CardDto> responseCards = cardsFeignClient.fetchCardDetails(correlationId ,mobileNumber);
         ResponseEntity<LoanDto> responseLoan = loanFeignClient.fetchLoanDetails(correlationId, mobileNumber);
 
         CustomerDetailsDto customerDetailsDto = customerMapper.customerDerailsDto(customer);
         customerDetailsDto.setAccountDto(accountDto);
-        customerDetailsDto.setCardDto(responseCards.getBody());
-        customerDetailsDto.setLoanDto(responseLoan.getBody());
+        customerDetailsDto.setCardDto(null != responseCards.getBody() ? responseCards.getBody() : null);
+        customerDetailsDto.setLoanDto(null != responseLoan.getBody() ? responseLoan.getBody() : null);
 
         return customerDetailsDto;
     }

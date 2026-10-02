@@ -6,6 +6,8 @@ import com.jing.accounts.payload.dto.CustomerDto;
 import com.jing.accounts.payload.response.ErrorResponseDto;
 import com.jing.accounts.payload.response.ResponseDto;
 import com.jing.accounts.service.AccountService;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -140,8 +142,13 @@ public class AccountController {
             description = "REST API to describe java version"
     )
     @GetMapping("/java-version")
+    @Retry(name= "getJavaVersion", fallbackMethod = "getJavaVersionFallback")
     public ResponseEntity<?> getJavaVersion(){
         return ResponseEntity.status(HttpStatus.OK).body(environment.getProperty("JAVA_HOME"));
+    }
+
+    public ResponseEntity<?> getJavaVersionFallback(){
+        return ResponseEntity.status(HttpStatus.OK).body("Fallback: Java version information is not available at the moment.");
     }
 
 
@@ -149,9 +156,14 @@ public class AccountController {
             summary = "Get Contact Information",
             description = "REST API to describe about contact information of accounts"
     )
+    @RateLimiter(name= "getContactInfo", fallbackMethod = "getContactInfoFallback")
     @GetMapping("/contact-info")
     public ResponseEntity<?> getContactInfo(){
         return ResponseEntity.status(HttpStatus.OK).body(accountContactInfoDto);
+    }
+
+    public ResponseEntity<?> getContactInfoFallback(Throwable throwable){
+        return ResponseEntity.status(HttpStatus.OK).body("Fallback: Contact information is not available at the moment.");
     }
 
 }

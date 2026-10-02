@@ -6,6 +6,7 @@ spring:
     name: "loans"
   datasource:
     url: jdbc:postgresql://loans-db:5432/loans
+#    url: jdbc:postgresql://localhost:5434/loans
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: postgres
